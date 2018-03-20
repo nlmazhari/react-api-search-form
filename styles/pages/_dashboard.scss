@@ -1,0 +1,22 @@
+.dashboard {
+    .search-bar {
+        background: $white_gray;        
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2em;
+        padding: 1em;
+        @include viewport(small) {
+            flex-direction: row;
+            align-items: center;
+            padding: 2em;
+        }
+    } 
+    .control-label {
+        text-transform: capitalize;
+    }
+    .img {
+        @extend .img-cover;
+        width: 200px;
+        height: 200px;
+    }
+}

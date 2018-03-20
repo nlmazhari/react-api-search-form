@@ -1,0 +1,71 @@
+.btn {
+    border: none;
+    border-radius: 4px;
+    box-shadow: none;
+    vertical-align: middle;
+    text-transform: capitalize;
+    transform-style: flat;
+    transition: all 500ms ease-out;
+    &:active,
+    &:focus,
+    &:hover,
+    &.btn-default:active,
+    &.btn-default:active:focus,
+    &.btn-default:active:hover {
+        box-shadow: none;
+        border: none;
+        transform-style: flat;
+        transition: all 250ms ease-out;
+        box-shadow: 0 10px 20px -8px rgba(31, 31, 31, 0.7);        
+    }
+}
+
+.blue-btn {
+    color: $white;
+    background: $btn-blue;
+    &:active,
+    &:focus,
+    &:hover,
+    &.btn-default:active,
+    &.btn-default:active:focus,
+    &.btn-default:active:hover,
+    //styles for disabled status
+    &.btn-default.disabled.focus,
+    &.btn-default.disabled:focus,
+    &.btn-default.disabled:hover,
+    &.btn-default[disabled].focus,
+    &.btn-default[disabled]:focus,
+    &.btn-default[disabled]:hover {
+        color: $white;
+        background: $btn-blue;
+    }
+}
+
+.mint-btn {
+    width: 100%;
+    color: $white;
+    background: $btn-mint;
+    &:active,
+    &:focus,
+    &:hover,
+    &.btn-default:active,
+    &.btn-default:active:focus,
+    &.btn-default:active:hover {
+        color: $white;
+        background: $btn-mint-hov;
+    }
+}
+
+.orange-btn {
+    color: $white;
+    background: $orange;
+    &:active,
+    &:focus,
+    &:hover,
+    &.btn-default:active,
+    &.btn-default:active:focus,
+    &.btn-default:active:hover {
+        color: $white;
+        background: $orange;
+    }
+}
